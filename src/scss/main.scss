@@ -1,0 +1,13 @@
+@import 'sprite';
+
+div {
+  background-image: linear-gradient(red, yellow);
+}
+
+h1{
+  color: red;
+}
+
+::placeholder {
+  color: gray;
+}
