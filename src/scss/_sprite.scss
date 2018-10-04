@@ -1,24 +1,23 @@
 %svg-common {
-	background: url("../images/svg/sprite.css-0ac6cd77.svg") no-repeat;
+  background: url('../images/svg/sprite.css-0ac6cd77.svg') no-repeat;
 }
 
 .icon-idea {
-	@extend %svg-common;
-	background-position: 0 0;
+  @extend %svg-common;
+  background-position: 0 0;
 }
 
 .icon-idea-dims {
-	width: 21px;
-	height: 21px;
+  width: 21px;
+  height: 21px;
 }
 
 .icon-trophy {
-	@extend %svg-common;
-	background-position: 100% 0;
+  @extend %svg-common;
+  background-position: 100% 0;
 }
 
 .icon-trophy-dims {
-	width: 21px;
-	height: 21px;
+  width: 21px;
+  height: 21px;
 }
-

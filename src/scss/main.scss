@@ -1,13 +1,9 @@
+//* bs 4.1.3
+@import 'functions';
+@import 'variables';
+@import 'mixins/all';
+@import 'reboot';
+@import 'type';
+
+@import 'utilities/all';
 @import 'sprite';
-
-div {
-  background-image: linear-gradient(red, yellow);
-}
-
-h1{
-  color: red;
-}
-
-::placeholder {
-  color: gray;
-}

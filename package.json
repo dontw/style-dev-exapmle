@@ -1,5 +1,5 @@
 {
-  "name": "style-dev-boilerplate",
+  "name": "starlux-style-guide",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "docs:build": "vuepress build docs",
     "docs:serve": "http-server docs/.vuepress/dist -p 9487"
   },
-  "author": "chenyu",
+  "author": "chenyu hsieh",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -30,6 +30,7 @@
     "onchange": "^5.0.2",
     "parallelshell": "^3.0.2",
     "postcss-cli": "^6.0.0",
+    "stylelint-config-recommended": "^2.1.0",
     "svg-sprite": "^1.5.0",
     "svgo": "^1.1.1",
     "vuepress": "^0.14.4"
