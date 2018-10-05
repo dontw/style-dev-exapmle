@@ -7,6 +7,7 @@
     "scss": "node-sass --source-map true --output-style compressed -o dist/css/ src/scss",
     "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers defaults -r dist/css/*.css",
     "imagemin": "imagemin src/images/* --out-dir=dist/images -p=pngquant",
+    "svgo": "svgo -i src/images/*.svg -o dist/images",
     "sprite": "svg-sprite --css --cscss --cx --css-example-dest=../images/svg/svg-preview.html --cs=../images/svg/sprite.css.svg  --css-prefix=.icon-%s -w 21 -h 21 --css-render-scss-dest=../../src/scss/_sprite.scss --dest=dist src/images/icons/*.svg",
     "serve": "browser-sync start --server --files 'dist/css/*.css' 'index.html'",
     "build:css": "npm run scss && npm run autoprefixer",

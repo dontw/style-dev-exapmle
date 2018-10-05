@@ -108,6 +108,18 @@ $yiq-contrasted-threshold: 150 !default;
 $yiq-text-dark: $gray-900 !default;
 $yiq-text-light: $white !default;
 
+//* Options
+//*
+//* Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: ture !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-print-styles: true !default;
+$enable-validation-icons: true !default;
+
 //* ===Spacing===
 
 $spacer: 1rem !default;

@@ -8,6 +8,30 @@
   <title>Style Development Boilerplate</title>
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
+<style>
+  .display-wrap {
+    margin: 15px;
+    padding: 15px;
+    background-color: #FFF;
+  }
+
+  .testing-inline-block {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    background-color: #f5f5f5;
+    display: inline-block;
+  }
+
+  .testing-inline-block--border {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    border: #dee2e6 solid 1px;
+  }
+</style>
 
 <body>
 
@@ -16,7 +40,7 @@
   <h1 style="display:inline-block;">For Development</h1>
   <div class="icon-idea icon-idea-dims" style="display:inline-block"></div>
   <!-- Header -->
-  <h1>===Headers===</h1>
+  <h1>===Fonts===</h1>
   <h1>This is h1</h1>
   <h2>This is h2</h2>
   <h3>This is h3</h3>
@@ -52,6 +76,109 @@
   <p><strong>This line rendered as bold text.</strong></p>
   <p><em>This line rendered as italicized text.</em></p>
 
+  <h1>Utilities</h1>
+  <h2>Borders</h2>
+  <h3>Additive</h3>
+  <div class="display-wrap border">
+    <div class="testing-inline-block border"></div>
+    <div class="testing-inline-block border-top"></div>
+    <div class="testing-inline-block border-right"></div>
+    <div class="testing-inline-block border-bottom"></div>
+    <div class="testing-inline-block border-left"></div>
+  </div>
+  <h3>Subtractive</h3>
+  <div class="display-wrap border">
+    <div class="testing-inline-block--border border-0"></div>
+    <div class="testing-inline-block--border border-top-0"></div>
+    <div class="testing-inline-block--border border-right-0"></div>
+    <div class="testing-inline-block--border border-bottom-0"></div>
+    <div class="testing-inline-block--border border-left-0"></div>
+  </div>
+
+  <h3>Border background-color</h3>
+  <div class="display-wrap  border">
+    <div class="testing-inline-block border border-primary"></div>
+    <div class="testing-inline-block border border-secondary"></div>
+    <div class="testing-inline-block border border-success"></div>
+    <div class="testing-inline-block border border-danger"></div>
+    <div class="testing-inline-block border border-warning"></div>
+    <div class="testing-inline-block border border-info"></div>
+    <div class="testing-inline-block border border-light"></div>
+    <div class="testing-inline-block border border-dark"></div>
+    <div class="testing-inline-block border border-white"></div>
+  </div>
+
+  <h3>border-radius</h3>
+  <div class="display-wrap border">
+    <div class="testing-inline-block rounded"></div>
+    <div class="testing-inline-block rounded-top"></div>
+    <div class="testing-inline-block rounded-right"></div>
+    <div class="testing-inline-block rounded-bottom"></div>
+    <div class="testing-inline-block rounded-left"></div>
+    <div class="testing-inline-block rounded-circle"></div>
+    <div class="testing-inline-block rounded-0"></div>
+  </div>
+
+  <h3>clearfix</h3>
+  <div class="display-wrap border clearfix">
+    <div class="doge" style="float:left">#</div>
+    <div class="doge" style="float:left">#</div>
+    <div class="doge" style="float:left">#</div>
+  </div>
+
+  <h3>text</h3>
+  <div class="display-wrap border">
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning">.text-warning</p>
+    <p class="text-info">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+  </div>
+
+  <h3>text-link</h3>
+  <div class="display-wrap border">
+    <p><a href="#" class="text-primary">Primary link</a></p>
+    <p><a href="#" class="text-secondary">Secondary link</a></p>
+    <p><a href="#" class="text-success">Success link</a></p>
+    <p><a href="#" class="text-danger">Danger link</a></p>
+    <p><a href="#" class="text-warning">Warning link</a></p>
+    <p><a href="#" class="text-info">Info link</a></p>
+    <p><a href="#" class="text-light bg-dark">Light link</a></p>
+    <p><a href="#" class="text-dark">Dark link</a></p>
+    <p><a href="#" class="text-muted">Muted link</a></p>
+    <p><a href="#" class="text-white bg-dark">White link</a></p>
+  </div>
 </body>
+
+<h3>background-color</h3>
+<div class="display-wrap border">
+  <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+  <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+  <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+  <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+  <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+  <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+  <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+  <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+  <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+</div>
+
+<h3>background-gradient-color</h3>
+<div class="display-wrap border">
+  <div class="p-3 mb-2 bg-gradient-primary text-white">.bg-gradient-primary</div>
+  <div class="p-3 mb-2 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
+  <div class="p-3 mb-2 bg-gradient-success text-white">.bg-gradient-success</div>
+  <div class="p-3 mb-2 bg-gradient-danger text-white">.bg-gradient-danger</div>
+  <div class="p-3 mb-2 bg-gradient-warning text-dark">.bg-gradient-warning</div>
+  <div class="p-3 mb-2 bg-gradient-info text-white">.bg-gradient-info</div>
+  <div class="p-3 mb-2 bg-gradient-light text-dark">.bg-gradient-light</div>
+  <div class="p-3 mb-2 bg-gradient-dark text-white">.bg-gradient-dark</div>
+</div>
+
 
 </html>

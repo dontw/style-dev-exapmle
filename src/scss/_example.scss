@@ -1,0 +1,11 @@
+//! FOR TESTING
+
+//* FUNCTIONS
+//  color($colorName) return color's hex code
+//  color-yiq($colorName) return light or dark color
+.doge {
+  width: 100px;
+  height: 100px;
+  background-color: color('starlux-black');
+  color: color-yiq(color('starlux-black'));
+}
