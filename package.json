@@ -15,6 +15,7 @@
     "build:all": "npm run build:images && npm run build:css",
     "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
     "watch:all": "parallelshell 'npm run serve' 'npm run watch:css'",
+    "watch:all_win": "parallelshell \"npm run serve\" \"npm run watch:css\"",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "http-server docs/.vuepress/dist -p 9487"
