@@ -97,10 +97,6 @@
 
 // Misc
 
-.text-hide {
-  @include text-hide($ignore-warning: true);
-}
-
 .text-decoration-none {
   text-decoration: none !important;
 }

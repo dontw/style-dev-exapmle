@@ -61,8 +61,8 @@ $ npm run doc:serves
 | postcss-cli                  | css後處理             |  [Github](https://github.com/postcss/postcss-cli)                  |
 | stylelint-config-recommended | stylelint推薦設定     | [Github](https://github.com/stylelint/stylelint-config-recommended) |
 | svg-sprite                   | svg合併               | [Github](https://github.com/jkphl/svg-sprite)                       |
-| svgo                         | svg圖片處理           | [官網](https://vuepress.vuejs.org/)                                 |
-| vuepress                     | 文檔產生              |                                                                     |
+| svgo                         | svg圖片處理           | [Github](https://github.com/svg/svgo)                               |
+| vuepress                     | 文檔產生              | [官網](https://vuepress.vuejs.org/)                                 |
 
 ## Contact
 
