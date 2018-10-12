@@ -343,7 +343,6 @@ breakpoint 的值如下：
 - md
 - lg
 - xl
-- print(列印模式)
 
 value 的值如下：
 
@@ -430,6 +429,126 @@ value 的值如下：
 <div class="shadow-lg">Larger shadow</div>
 ```
 
-## Sizing
+## Sizing\*
 
 尺寸
+
+### 用法
+
+新增 class 至 指定元素中
+
+- `.{sizing}-{value}`
+- `.{sizing}-{breakpoint}-{value}`
+
+sizing 的值如下：
+
+- `w`:width
+- `h`:height
+- `max-w`: max-width
+- `max-h`: max-height
+- `min-w`: min-width
+- `min-h`: min-height
+
+breakpoint 的值如下：
+
+- sm
+- md
+- lg
+- xl
+
+value 的值如下：
+
+- 10, 15, 20 ... 100
+- auto
+
+<div class="p-3 border">
+  <div class="w-10 p-1" style="background-color: #eee;">Width 10%</div>
+  <div class="w-15 p-1" style="background-color: #eee;">Width 15%</div>
+  <div class="w-20 p-1" style="background-color: #eee;">Width 20%</div>
+  <div class="w-25 p-1" style="background-color: #eee;">Width 25%</div>
+  <div class="w-30 p-1" style="background-color: #eee;">Width 30%</div>
+  <div class="w-35 p-1" style="background-color: #eee;">Width 35%</div>
+  <div class="w-40 p-1" style="background-color: #eee;">Width 40%</div>
+  <div class="w-45 p-1" style="background-color: #eee;">Width 45%</div>
+  <div class="w-50 p-1" style="background-color: #eee;">Width 50%</div>
+  <div class="w-55 p-1" style="background-color: #eee;">Width 55%</div>
+  <div class="w-60 p-1" style="background-color: #eee;">Width 60%</div>
+  <div class="w-65 p-1" style="background-color: #eee;">Width 65%</div>
+  <div class="w-70 p-1" style="background-color: #eee;">Width 70%</div>
+  <div class="w-75 p-1" style="background-color: #eee;">Width 75%</div>
+  <div class="w-80 p-1" style="background-color: #eee;">Width 80%</div>
+  <div class="w-85 p-1" style="background-color: #eee;">Width 85%</div>
+  <div class="w-90 p-1" style="background-color: #eee;">Width 90%</div>
+  <div class="w-95 p-1" style="background-color: #eee;">Width 95%</div>
+  <div class="w-100 p-1" style="background-color: #eee;">Width 100%</div>
+  <div class="w-auto p-1" style="background-color: #eee;">Width auto</div>
+</div>
+
+```html
+<div class="w-10 p-1" style="background-color: #eee;">Width 10%</div>
+<div class="w-15 p-1" style="background-color: #eee;">Width 15%</div>
+<div class="w-20 p-1" style="background-color: #eee;">Width 20%</div>
+<div class="w-25 p-1" style="background-color: #eee;">Width 25%</div>
+<div class="w-30 p-1" style="background-color: #eee;">Width 30%</div>
+<div class="w-35 p-1" style="background-color: #eee;">Width 35%</div>
+<div class="w-40 p-1" style="background-color: #eee;">Width 40%</div>
+<div class="w-45 p-1" style="background-color: #eee;">Width 45%</div>
+<div class="w-50 p-1" style="background-color: #eee;">Width 50%</div>
+<div class="w-55 p-1" style="background-color: #eee;">Width 55%</div>
+<div class="w-60 p-1" style="background-color: #eee;">Width 60%</div>
+<div class="w-65 p-1" style="background-color: #eee;">Width 65%</div>
+<div class="w-70 p-1" style="background-color: #eee;">Width 70%</div>
+<div class="w-75 p-1" style="background-color: #eee;">Width 75%</div>
+<div class="w-80 p-1" style="background-color: #eee;">Width 80%</div>
+<div class="w-85 p-1" style="background-color: #eee;">Width 85%</div>
+<div class="w-90 p-1" style="background-color: #eee;">Width 90%</div>
+<div class="w-95 p-1" style="background-color: #eee;">Width 95%</div>
+<div class="w-100 p-1" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-1" style="background-color: #eee;">Width auto</div>
+```
+
+### RWD
+
+<div class="p-3 border">
+  <div class="max-w-100 max-w-sm-80 max-w-md-70 max-w-lg-60 max-w-xl-50 bg-info p-3"></div>
+</div>
+
+```html
+  <div class="max-w-100 max-w-sm-80 max-w-md-70 max-w-lg-60 max-w-xl-50 bg-info"></div>
+```
+
+## Spacing
+
+新增
+
+### 用法
+
+新增 class 至 指定元素中
+
+- `.{property}-{size}`
+- `.{property}-{breakpoint}-{size}`
+- `.{property}{sides}-{size}`
+- `.{property}{sides}-{breakpoint}-{size}`
+- `.{property}{sides}-{breakpoint}-{size}`
+
+property 的值如下：
+
+- `m`: margin
+- `p`: padding
+
+sides 的值如下：
+
+- `t`: top
+- `r`: right
+- `b`: bottom
+- `l`: left
+- `x`: left and right
+- `y`: top and bottom
+- `空白`: top, left, bottom and left
+
+breakpoint 的值如下：
+
+- sm
+- md
+- lg
+- xl
