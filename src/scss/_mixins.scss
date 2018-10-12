@@ -3,13 +3,21 @@
 @import 'mixins/hover';
 @import 'mixins/text-emphasis';
 @import 'mixins/text-truncate';
+@import 'mixins/visibility';
+@import 'mixins/transition';
+@import 'mixins/box-shadow';
+@import 'mixins/border-radius';
 
 //* Components
 @import 'mixins/lists';
+@import 'mixins/buttons';
 
 //* Skins
 @import 'mixins/background-variant';
+@import 'mixins/gradient';
 
 //* Layout
 @import 'mixins/clearfix';
+@import 'mixins/grid-framework';
+@import 'mixins/grid';
 @import 'mixins/float';

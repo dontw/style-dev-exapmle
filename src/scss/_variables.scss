@@ -115,8 +115,9 @@ $yiq-text-light: $white !default;
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: ture !default;
-$enable-gradients: true !default;
+$enable-gradients: false !default;
 $enable-transitions: true !default;
+$enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 $enable-validation-icons: true !default;
 

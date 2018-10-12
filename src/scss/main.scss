@@ -1,12 +1,16 @@
-//* base on bootstrap v4.1.3
+/* 
+ * starlux web style v1.0.0
+ * base on bootstrap v4.1.3
+*/
 @import 'functions';
 @import 'variables';
 @import 'mixins';
 @import 'root';
 @import 'reboot';
 @import 'type';
-
+@import 'grid';
 @import 'utilities';
 @import 'close';
+@import 'buttons';
 @import 'sprite';
 @import 'example';

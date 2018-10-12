@@ -10,4 +10,6 @@
   color: color-yiq(color('starlux-black'));
 }
 
-
+.custom-btn {
+  @include button-variant(green, blue);
+}
