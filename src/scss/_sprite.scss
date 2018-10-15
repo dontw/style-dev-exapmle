@@ -1,10 +1,20 @@
 %svg-common {
-	background: url("../images/icons/sprite.css-0ac6cd77.svg") no-repeat;
+	background: url("../images/icons/sprite.css-812f79a0.svg") no-repeat;
+}
+
+.icon-ancient-scroll {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.icon-ancient-scroll-dims {
+	width: 21px;
+	height: 21px;
 }
 
 .icon-idea {
 	@extend %svg-common;
-	background-position: 0 0;
+	background-position: 100% 0;
 }
 
 .icon-idea-dims {
@@ -14,7 +24,7 @@
 
 .icon-trophy {
 	@extend %svg-common;
-	background-position: 100% 0;
+	background-position: 0 100%;
 }
 
 .icon-trophy-dims {

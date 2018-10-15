@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: 'starlux_logo.png'
+description: 'Welcome!'
 actionText: Go To Docs →
 actionLink: /documents/
 features:

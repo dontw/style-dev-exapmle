@@ -25,7 +25,8 @@ module.exports = {
         'Theme',
         'Layout',
         'Typography',
-        'Utility'
+        'Utility',
+        'Components'
       ],
 
       //* when page is not "home" type or don't have any sidebar items

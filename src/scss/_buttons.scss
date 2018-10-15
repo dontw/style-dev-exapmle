@@ -132,15 +132,15 @@ fieldset:disabled a.btn {
 }
 
 //
-// Block button
+// Long button
 //
 
-.btn-block {
+.btn-long {
   display: block;
   width: 100%;
 
   // Vertically space out multiple block buttons
-  + .btn-block {
+  + .btn-long {
     margin-top: $btn-block-spacing-y;
   }
 }
@@ -149,7 +149,7 @@ fieldset:disabled a.btn {
 input[type='submit'],
 input[type='reset'],
 input[type='button'] {
-  &.btn-block {
+  &.btn-long {
     width: 100%;
   }
 }

@@ -290,7 +290,9 @@ value 的值如下：
 
 將這些規則直接應用到 `<iframe>, <embed>, <video>, 和 <object>`元素；當需要這些樣式對應屬性時可加入 .embed-responsive-item。
 
-小技巧 你不需要將 frameborder="0" 加在你的`<iframe>`中，因為我們已經為你覆蓋了該屬性。
+::: tip
+你不需要將 frameborder="0" 加在你的`<iframe>`中，因為我們已經為你覆蓋了該屬性。
+:::
 
 <div class="p-3 border">
   <div class="embed-responsive embed-responsive-16by9">
@@ -546,9 +548,188 @@ sides 的值如下：
 - `y`: top and bottom
 - `空白`: top, left, bottom and left
 
+size 的值如下：
+
+$spacer 預設值為 1rem
+
+- 0: 將 margin 或 padding 歸 0
+- 1: $spacer \* 0.25
+- 2: $spacer \* 0.5
+- 3: $spacer \* 1
+- 4: $spacer \* 1.5
+- 5: $spacer \* 3
+- auto: 在 margin 時才有
+
 breakpoint 的值如下：
 
 - sm
 - md
 - lg
 - xl
+
+<div class="p-3 border">
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-1"></div>
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-2"></div>
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-3"></div>
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-4"></div>
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-5"></div>
+    <div class="testing-inline-block border border-primary mr-2 mr-sm-0"></div>
+</div>
+
+```html
+<div class="mr-2 mr-sm-1"></div>
+<div class="mr-2 mr-sm-2"></div>
+<div class="mr-2 mr-sm-3"></div>
+<div class="mr-2 mr-sm-4"></div>
+<div class="mr-2 mr-sm-5"></div>
+<div class="mr-2 mr-sm-0"></div>
+```
+
+## Text
+
+文字
+
+### Text Alignment
+
+將文字與元件對齊
+
+<div class="p-3 border">
+  <p class="text-justify">治外問！藥依來是臺影院跟開股育對才一毛活。運排小最實，國身物系在聽變或特中們局畫能笑廣市麼麗前真家資展易命了次發度不維得就也玩那者城活意息院導師師我兒一安情件保業，心個雖氣著立一快反的的少這義智對就陽經學了使己才業所共評我己中即語，是有然天目看去火環國戰新漸活質去時獲她加在信布行叫上會我化園多是我提……導灣度，標到來此會北，在有利太為料有應學的拉最學給教長孩細利品裡算步投了流看性的質中有了！邊大國。我現天，職出入的部及的馬只人著走演進得英更現，過在他一法……年成成股舉市地心時過續底李部？</p>
+</div>
+
+```html
+<p class="text-justify">...</p>
+```
+
+<div class="p-3 border">
+  <p class="text-left">我在左邊</p>
+  <p class="text-center">我在中間</p>
+  <p class="text-right">我在右邊</p>
+</div>
+
+```html
+<p class="text-left">我在左邊</p>
+<p class="text-center">我在中間</p>
+<p class="text-right">我在右邊</p>
+```
+
+### Text Transform
+
+變換字的大小寫
+
+<div class="p-3 border">
+  <p class="text-lowercase">小寫：lowercased text</p>
+  <p class="text-uppercase">大寫：uppercased text</p>
+  <p class="text-capitalize">首字大寫：first letter capitalized</p>
+</div>
+
+```html
+<p class="text-lowercase">小寫：lowercased text</p>
+<p class="text-uppercase">大寫：uppercased text</p>
+<p class="text-capitalize">首字大寫：first letter capitalized</p>
+```
+
+### Text weight , italic and monospace
+
+字的粗細、斜體與等寬字
+
+<div class="p-3 border">
+  <p class="font-weight-bold">我是粗體 I am bold </p>
+  <p class="font-weight-normal">我是一般 I am normal</p>
+  <p class="font-weight-light">我是細體 I am light</p>
+  <p class="font-italic">我是斜體 I am italic</p>
+  <p class="text-monospace">我是等寬 I am monospace</p>
+</div>
+
+```html
+<p class="font-weight-bold">我是粗體 I am bold </p>
+<p class="font-weight-normal">我是一般 I am normal</p>
+<p class="font-weight-light">我是細體 I am light</p>
+<p class="font-italic">我是斜體 I am italic</p>
+<p class="text-monospace">我是等寬 I am monospace</p>
+```
+
+## Verticle Alignment
+
+::: warning
+垂直對齊僅影響 `inline`、`inline-block`、`inline-table`、和 `table` 元素。
+:::
+
+### inline
+
+<div class="p-3 border">
+  <span class="align-baseline">baseline</span>
+  <span class="align-top">top</span>
+  <span class="align-middle">middle</span>
+  <span class="align-bottom">bottom</span>
+  <span class="align-text-top">text-top</span>
+  <span class="align-text-bottom">text-bottom</span>
+</div>
+
+```html
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">text-bottom</span>
+```
+
+### table
+
+<div class="p-3 border">
+<div class="d-table" style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</div>
+</div>
+
+```html
+<div class="d-table" style="height: 100px;">
+  <tbody>
+    <tr>
+      <td class="align-baseline">baseline</td>
+      <td class="align-top">top</td>
+      <td class="align-middle">middle</td>
+      <td class="align-bottom">bottom</td>
+      <td class="align-text-top">text-top</td>
+      <td class="align-text-bottom">text-bottom</td>
+    </tr>
+  </tbody>
+</div>
+```
+
+## Visibility
+
+把元素變不見，而且不會佔空間
+
+```html
+<div class="visible">...</div>
+<div class="invisible">...</div>
+```
+
+```scss
+// Class
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Usage as a mixin
+.element {
+  @include invisible(visible);
+}
+.element {
+  @include invisible(hidden);
+}
+```
