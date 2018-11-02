@@ -25,12 +25,15 @@
 ```
 
 <div class="p-3 border">
-  <p class="h1">.h1 heading</p>
-  <p class="h2">.h2 heading</p>
-  <p class="h3">.h3 heading</p>
-  <p class="h4">.h4 heading</p>
+  <p class="h1">.h1 heading 大標題</p>
+  <p class="h2">.h2 heading 區塊標題</p>
+  <p class="h3">.h3 heading 中標題</p>
+  <p class="h4">.h4 heading 小標題</p>
   <p class="h5">.h5 heading</p>
   <p class="h6">.h6 heading</p>
+  <p>我是內文</p>
+  <p class="small">small text</p>
+  <p class="tiny">tiny text</p>
 </div>
 
 ```html
@@ -40,6 +43,22 @@
   <p class="h4">.h4 heading</p>
   <p class="h5">.h5 heading</p>
   <p class="h6">.h6 heading</p>
+```
+
+## Paragraph
+
+一般內文與輔助文字
+
+<div class="p-3 border">
+  <p>我是內文</p>
+  <p class="small text-muted">small text</p>
+  <p class="tiny text-muted">tiny text</p>
+</div>
+
+```html
+<p>我是內文</p>
+<p class="small text-muted">small text</p>
+<p class="tiny text-muted">tiny text</p>
 ```
 
 ## Display

@@ -105,3 +105,65 @@
 <!-- my custom button -->
 <button class="btn custom-btn">...</button>
 ```
+
+## Buttons Groups
+
+按鈕群組
+
+### Basic Buttons Groups
+
+<div class="p-3 border">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+</div>
+
+```html
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+</div>
+```
+
+### Button Tool Bar
+
+<div class="p-3 border">
+  <div class="btn-toolbar">
+    <div class="btn-group mr-2">
+      <button type="button" class="btn btn-primary">1</button>
+      <button type="button" class="btn btn-primary">2</button>
+      <button type="button" class="btn btn-primary">3</button>
+      <button type="button" class="btn btn-primary">4</button>
+    </div>
+    <div class="btn-group mr-2">
+      <button type="button" class="btn btn-primary">5</button>
+      <button type="button" class="btn btn-primary">6</button>
+      <button type="button" class="btn btn-primary">7</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">8</button>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="btn-toolbar">
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-primary">1</button>
+    <button type="button" class="btn btn-primary">2</button>
+    <button type="button" class="btn btn-primary">3</button>
+    <button type="button" class="btn btn-primary">4</button>
+  </div>
+  <div class="btn-group mr-2">
+    <button type="button" class="btn btn-primary">5</button>
+    <button type="button" class="btn btn-primary">6</button>
+    <button type="button" class="btn btn-primary">7</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">8</button>
+  </div>
+</div>
+```

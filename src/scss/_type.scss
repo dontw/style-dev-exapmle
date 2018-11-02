@@ -96,6 +96,11 @@ small,
   font-weight: $font-weight-normal;
 }
 
+.tiny {
+  font-size: $tiny-font-size;
+  font-weight: $font-weight-normal;
+}
+
 mark,
 .mark {
   padding: $mark-padding;

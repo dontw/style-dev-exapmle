@@ -649,7 +649,39 @@ breakpoint 的值如下：
 <p class="text-monospace">我是等寬 I am monospace</p>
 ```
 
-## Verticle Alignment
+## Line Height
+
+行高
+
+<div class="p-3 border">
+  <p class="line-height-10 border">line-height:1</p>
+  <p class="line-height-15 border">line-height:1.5</p>
+  <p class="line-height-20 border">line-height:2</p>
+  <p class="line-height-25 border">line-height:2.5</p>
+  <p class="line-height-30 border">line-height:3</p>
+  <p class="line-height-35 border">line-height:3.5</p>
+  <p class="line-height-40 border">line-height:4</p>
+  <p class="line-height-45 border">line-height:4.5</p>
+  <p class="line-height-50 border">line-height:5</p>
+  <p class="line-height-55 border">line-height:5.5</p>
+  <p class="line-height-60 border">line-height:6</p>
+</div>
+
+```html
+<p class="line-height-10">line-height:1</p>
+<p class="line-height-15">line-height:1.5</p>
+<p class="line-height-20">line-height:2</p>
+<p class="line-height-25">line-height:2.5</p>
+<p class="line-height-30">line-height:3</p>
+<p class="line-height-35">line-height:3.5</p>
+<p class="line-height-40">line-height:4</p>
+<p class="line-height-45">line-height:4.5</p>
+<p class="line-height-50">line-height:5</p>
+<p class="line-height-55">line-height:5.5</p>
+<p class="line-height-60">line-height:6</p>
+```
+
+## Vertical Alignment
 
 ::: warning
 垂直對齊僅影響 `inline`、`inline-block`、`inline-table`、和 `table` 元素。

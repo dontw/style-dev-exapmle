@@ -16,6 +16,7 @@ $gray-600: #6c757d !default;
 $gray-700: #41474b !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$ink: #333333 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -36,26 +37,46 @@ $grays: map-merge(
 
 //* All Colors Settings
 //! 御三色
-$starlux-gold: #84754e !default;
-$starlux-brown: #8b634b !default;
-$starlux-black: #41474b !default;
+$brown-light: #c7ad9e;
+$brown: #996a4e !default;
+$brown-dark: #6e3e28 !default;
+
+$gold-light: #bcb39e;
+$gold: #84754e !default;
+$gold-dark: #70613d !default;
+
+$iron-light: #6f7478 !default;
+$iron: #3e454b !default;
+$iron-dark: #333333 !default;
+
+$ivory-light: ##faf9f2;
+$ivory: #f3f0df;
+$ivory-dark: #d6cdb9;
+
 $blue: #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: #bb0a30 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
+$ink: #333333 !default;
 
 $colors: () !default;
 $colors: map-merge(
   (
-    'starlux-gold': $starlux-gold,
-    'starlux-brown': $starlux-brown,
-    'starlux-black': $starlux-black,
+    'brown-light': $brown-light,
+    'brown': $brown,
+    'brown-dark': $brown-dark,
+    'gold-light': $gold-light,
+    'gold': $gold,
+    'gold-dark': $gold-dark,
+    'iron-light': $iron-light,
+    'iron': $iron,
+    'iron-dark': $iron-dark,
     'blue': $blue,
     'indigo': $indigo,
     'purple': $purple,
@@ -68,14 +89,15 @@ $colors: map-merge(
     'cyan': $cyan,
     'white': $white,
     'gray': $gray-600,
-    'gray-dark': $gray-800
+    'gray-dark': $gray-800,
+    'ink': $ink
   ),
   $colors
 );
 
 //* Theme Colors Settings
-$primary: $starlux-brown !default;
-$secondary: $gray-600 !default;
+$primary: $brown !default;
+$secondary: $ivory !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -114,7 +136,7 @@ $yiq-text-light: $white !default;
 
 $enable-caret: true !default;
 $enable-rounded: true !default;
-$enable-shadows: ture !default;
+$enable-shadows: true !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
 $enable-grid-classes: true !default;
@@ -178,7 +200,7 @@ $sizes: map-merge(
 //* Settings for the `<body>` element.
 
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: $ink !default;
 
 //* ===Links===
 //*
@@ -282,19 +304,37 @@ $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.5 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$line-height-base: 1.5 !default;
+$line-heights: () !default;
+$line-heights: map-merge(
+  (
+    10: 1,
+    15: 1.5,
+    20: 2,
+    25: 2.5,
+    30: 3,
+    35: 3.5,
+    40: 4,
+    45: 4.5,
+    50: 5,
+    55: 5.5,
+    60: 6
+  ),
+  $line-heights
+);
+
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.625 !default;
+$h3-font-size: $font-size-base * 1.375 !default;
+$h4-font-size: $font-size-base * 1.125 !default;
+$h5-font-size: $font-size-base * 1 !default;
+$h6-font-size: $font-size-base * 1 !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family: inherit !default;
-$headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+$headings-font-weight: 400 !default;
+$headings-line-height: 1.25 !default;
 $headings-color: inherit !default;
 
 $display1-size: 6rem !default;
@@ -311,7 +351,8 @@ $display-line-height: $headings-line-height !default;
 $lead-font-size: ($font-size-base * 1.25) !default;
 $lead-font-weight: 300 !default;
 
-$small-font-size: 80% !default;
+$small-font-size: $font-size-base * 0.875 !default;
+$tiny-font-size: $font-size-base * 0.75 !default;
 
 $text-muted: $gray-600 !default;
 

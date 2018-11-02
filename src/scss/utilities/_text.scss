@@ -106,3 +106,14 @@
 .text-reset {
   color: inherit !important;
 }
+
+.test {
+  color: $primary;
+}
+
+// Line-height
+@each $num, $value in $line-heights {
+  .line-height-#{$num} {
+    line-height: $value !important;
+  }
+}
